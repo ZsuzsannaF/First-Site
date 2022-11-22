@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size : 14px
+}
+body{
+    font-family: "Roboto",sans-serif;
+
+}
+#container{
+    max-width : 1200px;
+    margin : 0 auto;
+}
+#header h1{
+    padding:20px;
+    text-align: center;
+}
+#header{
+    border:1px solid orange;
+    background: orangered;
+}
+#header, #content{
+    padding : 30px 0;
+}
+
+#content .news {
+    max-width: 49.99%;
+    float:left;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: .1.5rem;
+
+}
+
+#nav ul{
+    list-style-type: none;
+}
+#content::after ,#nav ul::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+#nav ul li{
+    width: 19.99%;
+    float:left;
+    text-align: center;
+    border-right: 1px dotted black;
+}
+
+#nav ul li a{
+    background: orange;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;   
+    width: 100%;
+    
+}
+#nav ul li a:hover{
+    background-color: rgb(182, 91, 16);
+    color: rgb(31, 16, 19);
+    text-decoration: underline;
+}
+#content .news:first-child{
+    padding-right: 10px;
+}
+#content .news:nth-child{
+    padding-left: 10px;
+}
+#footer {
+    background : orange;
+    padding : 15px 0;
+    
+}
